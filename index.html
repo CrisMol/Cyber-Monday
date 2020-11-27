@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cyber Monday</title>
+	<!--Estilos-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section>
+		<h2>Cyber <br><span>Monday</span></h2>
+		<div class="cyber"></div>
+		<img src="img/text.png">
+	</section>
+	<script>
+		const cyber = document.querySelector('.cyber');
+		window.onmousemove = function(e){
+			const x = e.clientX;
+			cyber.style.left = x + 'px';
+		}
+	</script>
+</body>
+</html>
